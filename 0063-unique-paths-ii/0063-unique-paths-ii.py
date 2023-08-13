@@ -20,11 +20,11 @@ class Solution:
             if dp[r][c] != -1:
                 return dp[r][c]
             
-            # g[r][c] =1
+            g[r][c] =1
             
             pathCount = help(r+1, c) + help(r,c+1)
             
-            # g[r][c] = 0
+            g[r][c] = 0
             
             dp[r][c] = pathCount
             
